@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | Specter Hobby Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="shop">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero cart-hero">
+      <div class="container"><p class="eyebrow">Your build list</p><h1>Review your <span>cart.</span></h1><p>Make sure everything for your next project is ready to go.</p></div>
+    </section>
+    <section class="section cart-page-section">
+      <div class="container">
+        <div class="cart-page-layout">
+          <div class="cart-page-items">
+            <div class="cart-page-heading"><h2>Selected items</h2><button id="clear-cart" class="clear-button">Clear cart</button></div>
+            <div id="cart-page-items"></div>
+          </div>
+          <aside class="cart-summary">
+            <p class="eyebrow">Order summary</p>
+            <h2>Ready to <span>build.</span></h2>
+            <div class="summary-row"><span>Total quantity</span><strong id="cart-page-quantity">0</strong></div>
+            <div class="summary-row"><span>Subtotal</span><strong id="cart-page-subtotal">$0.00</strong></div>
+            <div class="summary-row"><span>Delivery</span><strong>Calculated at checkout</strong></div>
+            <div class="summary-total"><span>Grand total</span><strong id="cart-page-total">$0.00</strong></div>
+            <button id="cart-checkout" class="button button-primary cart-checkout">Proceed to checkout <i class="fa-solid fa-arrow-right"></i></button>
+            <a class="continue-shopping" href="shop.html"><i class="fa-solid fa-arrow-left"></i> Continue shopping</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div><div id="cart-drawer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
